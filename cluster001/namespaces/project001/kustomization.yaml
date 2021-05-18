@@ -8,3 +8,4 @@ bases:
 
 resources:
 - project001.yaml
+- storage-class-quota.yaml
