@@ -4,6 +4,5 @@ kind: Kustomization
 resources:
 - compute-quota.yaml
 - mem-limit-range.yaml
-- networkpolicy-deny-all.yaml
 - storage-class-quota.yaml
 - object-counts-quota.yaml

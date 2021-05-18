@@ -5,7 +5,7 @@ namespace: project001
 
 bases:
 - ../../policies
-- ../base
+- ./base
 
 resources:
 - project001.yaml
