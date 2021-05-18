@@ -8,7 +8,7 @@ bases:
 - ./base
 
 patchesStrategicMerge:
-- ./base/networkpolicy-deny-all.yaml
+- storage-class-quota.yaml
 
 resources:
 - project001.yaml
