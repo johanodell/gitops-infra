@@ -4,6 +4,7 @@ kind: Kustomization
 namespace: project001
 
 bases:
+- ../../policies
 - ../base
 
 resources:
