@@ -8,4 +8,6 @@ bases:
 
 resources:
 - project001.yaml
+
+patchesStrategicMerge:
 - storage-class-quota.yaml
