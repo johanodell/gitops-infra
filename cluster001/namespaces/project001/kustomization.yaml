@@ -4,8 +4,10 @@ kind: Kustomization
 namespace: project001
 
 bases:
-- ../../policies
-- ./base
+- ../../base
+
+patchesStrategicMerge:
+- storage-class-quota.yaml
 
 resources:
 - project001.yaml

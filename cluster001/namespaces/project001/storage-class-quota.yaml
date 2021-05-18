@@ -4,5 +4,5 @@ metadata:
   name: storage-class-quota
 spec:
   hard:
-    requests.storage: 2Gi
-    persistentvolumeclaims: '2'
+    requests.storage: 20Gi
+    persistentvolumeclaims: '10'
