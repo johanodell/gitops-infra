@@ -4,4 +4,4 @@ metadata:
   name: default-deny-all
   namespace: namespace-as-service
 spec:
-  podSelector: null
+  podSelector: {}
