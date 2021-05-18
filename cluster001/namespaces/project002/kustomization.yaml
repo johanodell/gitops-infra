@@ -4,8 +4,7 @@ kind: Kustomization
 namespace: project002
 
 bases:
-- ../../policies
-- ../base
+- ../../base
 
 resources:
 - project002.yaml
