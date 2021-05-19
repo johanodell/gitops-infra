@@ -11,3 +11,4 @@ patchesStrategicMerge:
 
 resources:
 - project001.yaml
+- rolebind-to-user-user001.yaml
