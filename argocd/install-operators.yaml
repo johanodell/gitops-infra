@@ -1,0 +1,11 @@
+project: default
+source:
+  repoURL: 'https://github.com/ralvares/gitops'
+  path: cluster001/operators
+  targetRevision: HEAD
+destination:
+  server: 'https://kubernetes.default.svc'
+syncPolicy:
+  automated:
+    prune: true
+    selfHeal: true
