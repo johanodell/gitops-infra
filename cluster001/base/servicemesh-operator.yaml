@@ -3,6 +3,9 @@ kind: Subscription
 metadata:
   name: elasticsearch-operator
   namespace: openshift-operators
+  annotations:
+    argocd.argoproj.io/sync-options: Prune=false
+    argocd.argoproj.io/compare-options: IgnoreExtraneous
 spec:
   channel: "stable"
   name: elasticsearch-operator
@@ -14,6 +17,9 @@ kind: Subscription
 metadata:
   name: jaeger-product
   namespace: openshift-operators
+  annotations:
+    argocd.argoproj.io/sync-options: Prune=false
+    argocd.argoproj.io/compare-options: IgnoreExtraneous
 spec:
   channel: "stable"
   name: jaeger-product
@@ -25,6 +31,9 @@ kind: Subscription
 metadata:
   name: kiali-ossm
   namespace: openshift-operators
+  annotations:
+    argocd.argoproj.io/sync-options: Prune=false
+    argocd.argoproj.io/compare-options: IgnoreExtraneous
 spec:
   channel: "stable"
   name: kiali-ossm
@@ -36,6 +45,9 @@ kind: Subscription
 metadata:
   name: servicemeshoperator
   namespace: openshift-operators
+  annotations:
+    argocd.argoproj.io/sync-options: Prune=false
+    argocd.argoproj.io/compare-options: IgnoreExtraneous
 spec:
   channel: "stable"
   name: servicemeshoperator
