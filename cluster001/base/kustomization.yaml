@@ -7,4 +7,3 @@ resources:
 - storage-class-quota.yaml
 - object-counts-quota.yaml
 - networkpolicy-deny-other-namespaces.yaml
-- servicemesh-operator.yaml
