@@ -1,0 +1,18 @@
+kind: NetworkPolicy
+apiVersion: networking.k8s.io/v1
+metadata:
+  name: allow-from-cake-to-mysql
+spec:
+  podSelector:
+    matchLabels:
+      name: mysql
+  ingress:
+    - ports:
+        - protocol: TCP
+          port: 3306
+      from:
+        - podSelector:
+            matchLabels:
+              name: cakephp-mysql-persistent
+  policyTypes:
+    - Ingress
