@@ -4,5 +4,6 @@ kind: Kustomization
 namespace: bookinfo-smcp
 
 resources:
+- namespace.yaml
 - ServiceMeshControlPlane.yaml
 - ServiceMeshMemberRoll.yaml
