@@ -1,9 +1,0 @@
-apiVersion: kustomize.config.k8s.io/v1beta1
-kind: Kustomization
-
-namespace: bookinfo-smcp
-
-resources:
-- namespace.yaml
-- ServiceMeshControlPlane.yaml
-- ServiceMeshMemberRoll.yaml
