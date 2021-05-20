@@ -25,8 +25,8 @@ spec:
     kiali:
       enabled: true
     grafana:
-      enabled: false
+      enabled: true
     tracing:
-      enabled: false
+      enabled: true
       jaeger:
         template: all-in-one
