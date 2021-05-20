@@ -1,14 +1,19 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
-namespace: project001
-
-bases:
-- ../baseline
-
-patchesStrategicMerge:
-- storage-quota.yaml
+namespace: bookinfo
 
 resources:
 - namespace.yaml
-- rolebinding.yaml
+- details-svc.yaml
+- details-deployment.yaml
+- ratings-svc.yaml
+- ratings-sa.yaml
+- ratings-deployment.yaml
+- reviews-sa.yaml
+- reviews-svc.yaml
+- reviews-deployment.yaml
+- productpage-svc.yaml
+- productpage-sa.yaml
+- productpage-deployment.yaml
+- details-sa.yaml
