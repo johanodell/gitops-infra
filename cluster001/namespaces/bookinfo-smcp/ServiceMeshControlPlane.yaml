@@ -3,6 +3,9 @@ kind: ServiceMeshControlPlane
 metadata:
   name: basic-install
   namespace: bookinfo-smcp
+  annotations:
+    argocd.argoproj.io/sync-options: Prune=false
+    argocd.argoproj.io/compare-options: IgnoreExtraneous
 spec:
   version: v1.1
   istio:
