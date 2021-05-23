@@ -6,5 +6,5 @@ namespace: project001
 resources:
 - baseline
 - rbac
+- custom
 - namespace.yaml
-- custom.yaml
