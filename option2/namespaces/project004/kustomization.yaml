@@ -5,6 +5,6 @@ namespace: project004
 
 resources:
 - baseline
+- rbac
 - namespace.yaml
-- rolebinding.yaml
 - custom.yaml
