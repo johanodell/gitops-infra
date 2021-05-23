@@ -12,3 +12,7 @@ subjects:
 - kind: ServiceAccount
   name: external-argocd-application-controller
   namespace: developer-argocd
+subjects:
+- kind: ServiceAccount
+  name: external-argocd-server
+  namespace: developer-argocd
