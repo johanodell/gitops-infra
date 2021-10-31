@@ -7,5 +7,4 @@ resources:
 - baseline
 - rbac
 - custom
-- nodes
 - namespace.yaml

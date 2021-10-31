@@ -2,6 +2,7 @@ apiVersion: batch/v1
 kind: Job
 metadata:
   name: label-house-simpson
+  namespace: openshift-gitops
 spec:
   template:
     spec:
@@ -21,5 +22,7 @@ spec:
               echo "========================"
           imagePullPolicy: Always
           name: apply-labels
+      serviceAccount: openshift-gitops:openshift-gitops-argocd-application-controller
+      serviceAccountName: openshift-gitops:openshift-gitops-argocd-application-controller
       restartPolicy: OnFailure
       terminationGracePeriodSeconds: 30
