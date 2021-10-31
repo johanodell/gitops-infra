@@ -6,7 +6,7 @@ metadata:
 spec:
   endpointPublishingStrategy:
     type: HostNetwork 
-  domain: bouvier.ocp.example.com
+  domain: bouvier.ocp.example.local
   replicas: 1
   nodePlacement:
     nodeSelector:

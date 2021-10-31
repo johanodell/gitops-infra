@@ -6,7 +6,7 @@ metadata:
 spec:
   endpointPublishingStrategy:
     type: HostNetwork 
-  domain: simpson.ocp.example.com
+  domain: simpson.ocp.example.local
   replicas: 1
   nodePlacement:
     nodeSelector:
