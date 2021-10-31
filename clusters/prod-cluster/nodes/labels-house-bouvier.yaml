@@ -1,0 +1,28 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: label-house-bouvier
+  namespace: openshift-gitops
+spec:
+  template:
+    spec:
+      containers:
+        - image: registry.redhat.io/openshift4/ose-cli:v4.8
+          command:
+            - /bin/bash
+            - -c
+            - |
+              export HOME=/tmp/pull
+              set -x
+              echo ""
+              echo "========================"
+              echo "Applying labels to nodes..."
+              oc label node compute-5 house=bouvier
+              oc label node compute-4 ingresscontroller=bouvier
+              echo "========================"
+          imagePullPolicy: Always
+          name: apply-labels
+      serviceAccount: openshift-gitops-argocd-application-controller
+      serviceAccountName: openshift-gitops-argocd-application-controller
+      restartPolicy: OnFailure
+      terminationGracePeriodSeconds: 30
