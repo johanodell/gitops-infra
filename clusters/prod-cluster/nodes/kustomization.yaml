@@ -6,3 +6,5 @@ namespace: openshift-gitops
 resources:
 - labels-house-simpson.yaml
 - labels-house-bouvier.yaml
+- taint-house-bouvier.yaml
+- taint-house-simpson.yaml
