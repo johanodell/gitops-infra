@@ -1,9 +1,6 @@
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
-  name: deny-other-namespaces
+  name: default-deny-all
 spec:
   podSelector: null
-  ingress:
-    - from:
-        - podSelector: {}
