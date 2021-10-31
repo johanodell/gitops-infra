@@ -1,0 +1,15 @@
+apiVersion: operator.openshift.io/v1
+kind: IngressController
+metadata:
+  name: default
+  namespace: openshift-ingress-operator
+spec:
+  nodePlacement:
+      nodeSelector:
+        matchLabels:
+          ingresscontroller: default
+  namespaceSelector:
+    matchExpressions:
+    - key: house
+      operator: DoesNotExist
+  replicas: 2
