@@ -1,6 +1,8 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
+  annotations:
+    argocd.argoproj.io/sync-options: Replace=true
   name: label-house-bouvier
   namespace: openshift-gitops
 spec:
