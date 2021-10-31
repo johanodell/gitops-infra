@@ -3,7 +3,6 @@ kind: Kustomization
 
 resources:
 #- compute-quota.yaml
-- allow-from-ingress.yaml
 - mem-limit-range.yaml
 - storage-class-quota.yaml
 - object-counts-quota.yaml
