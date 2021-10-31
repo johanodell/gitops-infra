@@ -20,7 +20,7 @@ spec:
               echo "========================"
               echo "Applying labels to nodes..."
 
-              oc adm taint node compute-4 ingresscontroller=bouvier:NoSchedule
+              oc adm taint node compute-3 ingresscontroller=bouvier:NoSchedule
               oc adm taint node compute-5 house=bouvier:NoSchedule
 
               echo "========================"

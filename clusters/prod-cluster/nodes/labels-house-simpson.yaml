@@ -21,7 +21,7 @@ spec:
               echo "Applying labels to nodes..."
 
               oc label node --overwrite compute-2 ingresscontroller=simpson
-              oc label node --overwrite compute-3 house=simpson
+              oc label node --overwrite compute-4 house=simpson
               
               echo "========================"
           imagePullPolicy: Always

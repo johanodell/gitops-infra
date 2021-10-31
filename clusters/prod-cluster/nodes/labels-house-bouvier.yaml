@@ -20,7 +20,7 @@ spec:
               echo "========================"
               echo "Applying labels to nodes..."
 
-              oc label node --overwrite compute-4 ingresscontroller=bouvier
+              oc label node --overwrite compute-3 ingresscontroller=bouvier
               oc label node --overwrite compute-5 house=bouvier
 
               echo "========================"

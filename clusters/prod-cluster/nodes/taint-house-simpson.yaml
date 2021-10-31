@@ -21,7 +21,7 @@ spec:
               echo "Applying labels to nodes..."
 
               oc adm taint node compute-2 ingresscontroller=simpson:NoSchedule
-              oc adm taint node compute-3 house=simpson:NoSchedule
+              oc adm taint node compute-4 house=simpson:NoSchedule
 
               echo "========================"
           imagePullPolicy: Always
