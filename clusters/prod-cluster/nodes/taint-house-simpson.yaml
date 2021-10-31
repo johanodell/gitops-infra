@@ -20,8 +20,8 @@ spec:
               echo "========================"
               echo "Applying labels to nodes..."
 
-              oc adm taint node compute-2 ingresscontroller=simpson:NoSchedule
-              oc adm taint node compute-4 house=simpson:NoSchedule
+              oc adm taint node compute-2 ingresscontroller=simpsons:NoSchedule
+              oc adm taint node compute-4 house=simpsons:NoSchedule
 
               echo "========================"
           imagePullPolicy: Always
