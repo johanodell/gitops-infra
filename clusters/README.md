@@ -1,8 +1,8 @@
 ## Clusters
 ### Prod
 
-- Project001
-- Project004
+- Simpson
+- Bouvier
 
 ### Dev 
 - Project002
