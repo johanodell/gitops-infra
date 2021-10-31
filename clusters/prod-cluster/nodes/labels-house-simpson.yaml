@@ -17,8 +17,10 @@ spec:
               echo ""
               echo "========================"
               echo "Applying labels to nodes..."
-              oc label node compute-3 house=simpson
+
               oc label node compute-2 ingresscontroller=simpson
+              oc label node compute-3 house=simpson
+              
               echo "========================"
           imagePullPolicy: Always
           name: apply-labels
