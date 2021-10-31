@@ -1,0 +1,25 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: label-house-simpson
+spec:
+  template:
+    spec:
+      containers:
+        - image: registry.redhat.io/openshift4/ose-cli:v4.8
+          command:
+            - /bin/bash
+            - -c
+            - |
+              export HOME=/tmp/pull
+              set -x
+              echo ""
+              echo "========================"
+              echo "Applying labels to nodes..."
+              oc label node compute-3 house=simpson
+              oc label node compute-2 ingresscontroller=simpson
+              echo "========================"
+          imagePullPolicy: Always
+          name: apply-labels
+      restartPolicy: OnFailure
+      terminationGracePeriodSeconds: 30
