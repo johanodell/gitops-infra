@@ -22,7 +22,7 @@ spec:
               echo "========================"
           imagePullPolicy: Always
           name: apply-labels
-      serviceAccount: openshift-gitops:openshift-gitops-argocd-application-controller
-      serviceAccountName: openshift-gitops:openshift-gitops-argocd-application-controller
+      serviceAccount: openshift-gitops-argocd-application-controller
+      serviceAccountName: openshift-gitops-argocd-application-controller
       restartPolicy: OnFailure
       terminationGracePeriodSeconds: 30
