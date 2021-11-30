@@ -6,7 +6,7 @@ metadata:
 spec:
   endpointPublishingStrategy:
     type: HostNetwork 
-  domain: simpson.ocp.example.local
+  domain: simpson.ocp.codell.io
   replicas: 1
   nodePlacement:
     nodeSelector:
