@@ -5,5 +5,5 @@ metadata:
   labels:
     house: simpson
   annotations:
-    openshift.io/node-selector: "house=simpsons"
+    #openshift.io/node-selector: "house=simpsons"
     scheduler.alpha.kubernetes.io/defaultTolerations: '[{"Key": "house", "Operator":"Equal", "Value": "simpsons", "effect": "NoSchedule"}]'
